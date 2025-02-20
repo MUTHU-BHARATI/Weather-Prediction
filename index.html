@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Prediction</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="image.jpg" alt="Weather Prediction" class="header-image">
+            <h1>Weather Prediction</h1>
+            <p>Enter the details to predict the weather condition</p>
+        </header>
+        <form id="weather-form">
+            <div class="form-group">
+                <label for="temperature">Temperature (°C):</label>
+                <input type="number" id="temperature" name="temperature" required>
+            </div>
+            <div class="form-group">
+                <label for="humidity">Humidity (%):</label>
+                <input type="number" id="humidity" name="humidity" required>
+            </div>
+            <div class="form-group">
+                <label for="windSpeed">Wind Speed (km/h):</label>
+                <input type="number" id="windSpeed" name="windSpeed" required>
+            </div>
+            <div class="form-group">
+                <label for="pressure">Pressure (hPa):</label>
+                <input type="number" id="pressure" name="pressure" required>
+            </div>
+            <button type="button" onclick="predictWeather()">Predict Weather</button>
+        </form>
+        <div id="result" class="result">
+            <h2>Predicted Weather: <span id="weather-result">--</span></h2>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
